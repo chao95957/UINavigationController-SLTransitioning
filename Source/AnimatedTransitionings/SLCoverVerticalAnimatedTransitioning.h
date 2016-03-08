@@ -8,6 +8,9 @@
 
 #import "SLBaseAnimatedTransitioning.h"
 
+/* 
+ Optional. Used in transitioningInfoAsTo:context:.
+ */
 static NSString *const SLCoverVerticalAnimatedTransitioningInfoBackgroundColorKey = @"SLCoverVerticalAnimatedTransitioningInfoBackgroundColorKey";
 
 typedef enum : NSUInteger {

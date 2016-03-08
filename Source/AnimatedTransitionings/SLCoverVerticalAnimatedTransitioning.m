@@ -39,7 +39,7 @@
     UIView *baseView = [[keyWindow subviews] firstObject];
     
     UIColor *originalColor = keyWindow.backgroundColor;
-    UIColor *newColor = originalColor;
+    UIColor *newColor = toView.backgroundColor;
     if ([toVC conformsToProtocol:@protocol(SLTransitioningDelegate)] && [(id<SLTransitioningDelegate>)toVC respondsToSelector:@selector(transitioningInfoAsTo:context:)]) {
         newColor = [[(id<SLTransitioningDelegate>)toVC transitioningInfoAsTo:self context:transitionContext] valueForKey:SLCoverVerticalAnimatedTransitioningInfoBackgroundColorKey];
     }

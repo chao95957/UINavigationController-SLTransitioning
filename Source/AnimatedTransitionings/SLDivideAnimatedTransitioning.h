@@ -9,7 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "SLBaseAnimatedTransitioning.h"
 
-static NSString *const SLDivideAnimatedTransitioningInfoPositionKey = @"SLDivideAnimatedTransitioningInfoPositionKey"; // origin.y reference to UIWindow
+/*
+ Origin.y reference to UIWindow.
+ 
+ Optional. Used in transitioningInfoAsFrom:context.
+ */
+static NSString *const SLDivideAnimatedTransitioningInfoPositionKey = @"SLDivideAnimatedTransitioningInfoPositionKey";
 
 @interface SLDivideAnimatedTransitioning : SLBaseAnimatedTransitioning
 

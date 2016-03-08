@@ -11,7 +11,7 @@
 @implementation SLImageAnimatedTransitioning
 
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext {
-    return 0.26;
+    return 0.35;
 }
 
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext {
@@ -64,6 +64,11 @@
             }
             
             UIImageView *imageView = [self copyOfImageView:toImageView];
+            if (toImageView.layer.cornerRadius == fromImageView.layer.cornerRadius) {
+                imageView.layer.cornerRadius = toImageView.layer.cornerRadius;
+                imageView.layer.borderColor = toImageView.layer.borderColor;
+                imageView.layer.borderWidth = toImageView.layer.borderWidth;
+            }
             imageView.frame = [containerView convertRect:fromImageView.frame fromView:fromImageView.superview] ;
             [containerView addSubview:imageView];
             
@@ -86,7 +91,7 @@
                     fromView.frame = frame;
                 }
                 
-                imageView.frame = [containerView convertRect:[endFrameForIV CGRectValue] fromView:toImageView.superview];
+                imageView.frame = [endFrameForIV CGRectValue];
             } completion:^(BOOL finished) {
                 [maskViewForFromView removeFromSuperview];
                 [maskViewForToView removeFromSuperview];
@@ -109,9 +114,6 @@
     dummyImageView.contentMode = imageView.contentMode;
     dummyImageView.image = imageView.image;
     dummyImageView.clipsToBounds = imageView.clipsToBounds;
-    dummyImageView.layer.cornerRadius = imageView.layer.cornerRadius;
-    dummyImageView.layer.borderColor = imageView.layer.borderColor;
-    dummyImageView.layer.borderWidth = imageView.layer.borderWidth;
     return dummyImageView;
 }
 @end

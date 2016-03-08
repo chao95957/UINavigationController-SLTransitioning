@@ -8,9 +8,18 @@
 
 #import "SLBaseAnimatedTransitioning.h"
 
-static NSString *const SLImageAnimatedTransitioningInfoImageViewKey = @"SLImageAnimatedTransitioningInfoImageViewKey"; // image view whose position is animated when transitioning
 /*
- Its value is the rendered frame of image view  which belongs to tthe oViewController. The value is sometimes different from imageView.frame because at that time the view of the toViewController hasn't been laid out or the cause of the navigation bar, especially when push. So you should always make it the actual value, even you manually calculate it.
+ Image view whose position is animated when transitioning.
+ 
+ Required. Used in transitioningInfoAsFrom:context: and transitioningInfoAsTo:context:.
+ */
+static NSString *const SLImageAnimatedTransitioningInfoImageViewKey = @"SLImageAnimatedTransitioningInfoImageViewKey";
+
+/*
+ Its value is the rendered frame of image view  which belongs to the toViewController. 
+ IMPORTANT: the frame is in the coordiate system of window. So you should always make it the actual value, even you manually calculate it.
+ 
+ Required. Used in transitioningInfoAsTo:context:.
  */
 static NSString *const SLImageAnimatedTransitioningInfoEndFrameForImageViewKey = @"SLImageAnimatedTransitioningInfoEndFrameForImageViewKey";
 

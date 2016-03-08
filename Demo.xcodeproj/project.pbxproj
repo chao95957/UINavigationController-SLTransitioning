@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		482722781C8EBAC300798B99 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 482722771C8EBAC300798B99 /* TableViewController.m */; };
+		4827228B1C8ECCD100798B99 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4827228A1C8ECCD100798B99 /* ImageViewController.m */; };
+		4827229A1C8EE1EE00798B99 /* HASViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 482722991C8EE1EE00798B99 /* HASViewController.m */; };
+		4827229D1C8EE1F700798B99 /* MJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4827229C1C8EE1F700798B99 /* MJViewController.m */; };
 		48DCFA7F1C8D570E003200CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFA7E1C8D570E003200CC /* main.m */; };
 		48DCFA821C8D570E003200CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFA811C8D570E003200CC /* AppDelegate.m */; };
-		48DCFA851C8D570E003200CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DCFA841C8D570E003200CC /* ViewController.m */; };
 		48DCFA881C8D570E003200CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48DCFA861C8D570E003200CC /* Main.storyboard */; };
 		48DCFA8A1C8D570E003200CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48DCFA891C8D570E003200CC /* Assets.xcassets */; };
 		48DCFA8D1C8D570E003200CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48DCFA8B1C8D570E003200CC /* LaunchScreen.storyboard */; };
@@ -29,12 +32,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		482722761C8EBAC300798B99 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		482722771C8EBAC300798B99 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		482722891C8ECCD100798B99 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		4827228A1C8ECCD100798B99 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		482722981C8EE1EE00798B99 /* HASViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HASViewController.h; sourceTree = "<group>"; };
+		482722991C8EE1EE00798B99 /* HASViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HASViewController.m; sourceTree = "<group>"; };
+		4827229B1C8EE1F700798B99 /* MJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJViewController.h; sourceTree = "<group>"; };
+		4827229C1C8EE1F700798B99 /* MJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJViewController.m; sourceTree = "<group>"; };
 		48DCFA7A1C8D570E003200CC /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48DCFA7E1C8D570E003200CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		48DCFA801C8D570E003200CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		48DCFA811C8D570E003200CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		48DCFA831C8D570E003200CC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		48DCFA841C8D570E003200CC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		48DCFA871C8D570E003200CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48DCFA891C8D570E003200CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48DCFA8C1C8D570E003200CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,8 +110,14 @@
 			children = (
 				48DCFA801C8D570E003200CC /* AppDelegate.h */,
 				48DCFA811C8D570E003200CC /* AppDelegate.m */,
-				48DCFA831C8D570E003200CC /* ViewController.h */,
-				48DCFA841C8D570E003200CC /* ViewController.m */,
+				482722761C8EBAC300798B99 /* TableViewController.h */,
+				482722771C8EBAC300798B99 /* TableViewController.m */,
+				482722891C8ECCD100798B99 /* ImageViewController.h */,
+				4827228A1C8ECCD100798B99 /* ImageViewController.m */,
+				482722981C8EE1EE00798B99 /* HASViewController.h */,
+				482722991C8EE1EE00798B99 /* HASViewController.m */,
+				4827229B1C8EE1F700798B99 /* MJViewController.h */,
+				4827229C1C8EE1F700798B99 /* MJViewController.m */,
 				48DCFA861C8D570E003200CC /* Main.storyboard */,
 				48DCFA941C8D5741003200CC /* Source */,
 				48DCFA891C8D570E003200CC /* Assets.xcassets */,
@@ -124,13 +139,13 @@
 		48DCFA941C8D5741003200CC /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				48DCFA971C8D57DD003200CC /* SLTransitioningCache.h */,
-				48DCFA981C8D57DD003200CC /* SLTransitioningCache.m */,
-				48DCFA961C8D57DD003200CC /* SLNavigationTransitioningStyle.h */,
 				48DCFA991C8D57DD003200CC /* UINavigationController+SLTransitioning.h */,
 				48DCFA9A1C8D57DD003200CC /* UINavigationController+SLTransitioning.m */,
 				48DCFA9B1C8D57DD003200CC /* UIViewController+SLTransitioning.h */,
 				48DCFA9C1C8D57DD003200CC /* UIViewController+SLTransitioning.m */,
+				48DCFA961C8D57DD003200CC /* SLNavigationTransitioningStyle.h */,
+				48DCFA971C8D57DD003200CC /* SLTransitioningCache.h */,
+				48DCFA981C8D57DD003200CC /* SLTransitioningCache.m */,
 				48DCFA951C8D5741003200CC /* AnimatedTransitionings */,
 			);
 			name = Source;
@@ -237,20 +252,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				48DCFA9E1C8D57DD003200CC /* UINavigationController+SLTransitioning.m in Sources */,
-				48DCFA851C8D570E003200CC /* ViewController.m in Sources */,
 				48DCFA9D1C8D57DD003200CC /* SLTransitioningCache.m in Sources */,
 				48DCFA821C8D570E003200CC /* AppDelegate.m in Sources */,
 				48DCFABD1C8D57F7003200CC /* SLResignTopAnimatedTransitioning.m in Sources */,
 				48DCFABC1C8D57F7003200CC /* SLResignLeftAnimatedTransitioning.m in Sources */,
 				48DCFABE1C8D57F7003200CC /* SLSnapshot.m in Sources */,
+				4827229D1C8EE1F700798B99 /* MJViewController.m in Sources */,
 				48DCFAB71C8D57F7003200CC /* SLDivideAnimatedTransitioning.m in Sources */,
+				482722781C8EBAC300798B99 /* TableViewController.m in Sources */,
 				48DCFAB91C8D57F7003200CC /* SLFadeAnimatedTransitioning.m in Sources */,
 				48DCFA7F1C8D570E003200CC /* main.m in Sources */,
+				4827228B1C8ECCD100798B99 /* ImageViewController.m in Sources */,
 				48DCFAB61C8D57F7003200CC /* SLCoverVerticalAnimatedTransitioning.m in Sources */,
 				48DCFAB81C8D57F7003200CC /* SLDivideSnapshot.m in Sources */,
 				48DCFAB51C8D57F7003200CC /* SLBaseAnimatedTransitioning.m in Sources */,
 				48DCFABA1C8D57F7003200CC /* SLFlipOverAnimatedTransitioning.m in Sources */,
 				48DCFABB1C8D57F7003200CC /* SLImageAnimatedTransitioning.m in Sources */,
+				4827229A1C8EE1EE00798B99 /* HASViewController.m in Sources */,
 				48DCFA9F1C8D57DD003200CC /* UIViewController+SLTransitioning.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,7 +381,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.soulbeats.soul.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -374,7 +394,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.soulbeats.soul.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
