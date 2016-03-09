@@ -24,7 +24,7 @@
             </objects>
             <point key="canvasLocation" x="559" y="1124"/>
         </scene>
-        <!--Transitioning Styles-->
+        <!--Styles-->
         <scene sceneID="9zA-VT-CjL">
             <objects>
                 <tableViewController id="mXz-f6-dIW" customClass="TableViewController" sceneMemberID="viewController">
@@ -243,7 +243,7 @@
                             <outlet property="delegate" destination="mXz-f6-dIW" id="hmH-4g-Cva"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Transitioning Styles" id="ICy-kU-jQi"/>
+                    <navigationItem key="navigationItem" title="Styles" id="ICy-kU-jQi"/>
                     <connections>
                         <outlet property="imageView" destination="Hc4-QS-Ydq" id="63v-Fm-eZs"/>
                         <segue destination="dve-Hu-cOC" kind="show" identifier="Default Segue" id="tPw-mP-MCo"/>
