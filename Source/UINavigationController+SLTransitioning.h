@@ -18,6 +18,6 @@
 
 @interface UINavigationController (SLTransitioning)
 @property (nonatomic, assign) SLNavigationTransitioningStyle transitioningStyle;
-@property (nonatomic, assign) BOOL symmetrical;
-@property (nonatomic, assign) SLCoverDirection coverDirection;
+@property (nonatomic, assign) BOOL symmetrical; // subtle property, don't use it except you kown what you are doing
+@property (nonatomic, assign) SLCoverDirection coverDirection; // controls the direction of SLNavigationTransitioningStyleCoverVertical
 @end
