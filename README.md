@@ -1,7 +1,7 @@
 # UINavigationController-SLTransitioning
 A UINavigationController category which contains multiple transitioning styles for use. Inspired by `navigationItem`, I make navigation transitioning as simple as that. In this category, there are multiple styles for transitioning, including System (Default), Fade, Divide, Resign Top, Resign Left, Filp Over, Image and Cover Vertical (Top or Bottom). What makes it more meaningful is that you can easily add your custom beautiful transitioing style into it. But, there are still some shortages, like the lack of interactive pop geatures. Maybe I will think of a good idea to solve it, or you can be the solver.
 
-So, Let's enjoy it.
+Anyway, Let's enjoy it. Thanks to [《你今天真好看》](http://www.amazon.cn/你今天真好看-莉兹·克里莫/dp/B010SK9Z34/ref=sr_1_1?ie=UTF8&qid=1457503887&sr=8-1&keywords=你今天真好看) for drawings in my project.
 
 ##Styles
 ###System
@@ -67,10 +67,10 @@ For some special veiw controllers, you just want its transitioning style changed
 
 You will find it similar to `navigationItem`. Yes, I try to make it like that. 
 
-Some transitioning styles like Divide, Image, Cover Vertical have special keys of info to used in the methods of `SLTransitioningDelegate`. They maybe be puzzling, so read the code in `Demo`, you will figure them.
+Some transitioning styles like Divide, Image, Cover Vertical have special keys of info to used in the methods of `SLTransitioningDelegate`. They maybe be puzzling, so read the code in `Demo`, you will figure them out.
 
 ###Advancement
-I want to talk about its principle. The heart of this category is the `navigationController:animationControllerForOperation:fromViewController:toViewController:` method of `TransitioningProxy` in `UINavigationController+SLTransitioning.m`. You can read it to figure my all thoughts.
+I want to talk about its principle. The heart of this category is the `navigationController:animationControllerForOperation:fromViewController:toViewController:` method of `TransitioningProxy` in `UINavigationController+SLTransitioning.m`. You can read it to figure my all thoughts out.
 
 Because transitioning style is always symmetrical, meaning that when A -> B, A is moved to left, then when B back to A (B -> A), A is moved from left. To realize this symmetry, I keep track of transitioning style when pushing, and examine the `symmetrical` property to decide whose duty for **popping** style. Considering a condition that B pop to A, If `symmetrical == YES`, I keep the order to find the style: last push style, then `navigationTransitioningStyle` of A, then `transitioningStyle` of navigation Controller; If NO, the order is `navigationTransitioningStyle` of B, then `transitioningStyle` of navigation Controller. **When `symmetrical == NO`, it will probably fail to get the effect of transitioning style because many styles depends on snapshots created in the process of pushing before. So, Always keep `symmetrical` to YES, which is also the default value, except that you know what you are doing.**
 
