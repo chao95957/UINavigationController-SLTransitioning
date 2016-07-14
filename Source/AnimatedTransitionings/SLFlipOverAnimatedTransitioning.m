@@ -28,8 +28,8 @@
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext {
     UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
-    UIView *fromView = [transitionContext viewForKey:UITransitionContextFromViewKey];
-    UIView *toView = [transitionContext viewForKey:UITransitionContextToViewKey];
+    UIView *fromView = fromVC.view;
+    UIView *toView = toVC.view;
     UIView *containerView = [transitionContext containerView];
     
     toView.frame = [transitionContext finalFrameForViewController:toVC];
